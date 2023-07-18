@@ -1,0 +1,300 @@
+.main-profile {
+  font-family: "Ubuntu", sans-serif;
+}
+.main-profile .profile-section {
+  height: 100vh;
+}
+@media (min-width: 576px) {
+  .main-profile .profile-section {
+    height: unset;
+  }
+}
+.main-profile .profile-section .navbar .bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #a9d9e2 50%, #FFFFFF 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+.main-profile .profile-section .navbar .bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+.main-profile .profile-section .navbar .bg3 {
+  animation-duration: 5s;
+}
+.main-profile .profile-section .navbar svg {
+  font-size: 2.8rem;
+}
+.main-profile .profile-section .navbar .resumebtn {
+  font-size: 1.5rem;
+  border-radius: 25px;
+  border: 3px solid #00069a;
+  font-weight: 700;
+  color: #00069a;
+}
+.main-profile .profile-section-1 img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 350px;
+  height: 350px;
+}
+.main-profile .profile-section-1 label {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #00069a;
+}
+.main-profile .profile-section-1 p {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: black;
+}
+.main-profile .profile-section-1 .box {
+  position: absolute;
+  bottom: -22%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-profile .profile-section-1 .box:hover span {
+  border-bottom: 8px solid #00069a;
+  border-right: 8px solid #00069a;
+}
+.main-profile .profile-section-1 .box span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-bottom: 5px solid #00069a;
+  border-right: 5px solid #00069a;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+.main-profile .profile-section-1 .box span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+.main-profile .profile-section-1 .box span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+.main-profile .about-section {
+  background: #00069a;
+}
+.main-profile .about-section p {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.main-profile .about-section span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.main-profile .skill-section {
+  border-radius: 28px;
+  margin-top: -60px;
+  background: white;
+  box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5), 0 0 0 1px #E6ECF8;
+}
+.main-profile .skill-section h2 {
+  color: #00069a;
+}
+.main-profile .skill-section .percentage-bar {
+  background: #e5e5e5;
+  display: block;
+  height: 35px;
+  margin-bottom: 15px;
+  position: relative;
+  transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  transition-property: width, background-color;
+  -moz-transition-property: width, background-color;
+  -ms-transition-property: width, background-color;
+  -o-transition-property: width, background-color;
+  -webkit-transition-property: width, background-color;
+  width: 100%;
+}
+.main-profile .skill-section .percentage-bar .title {
+  color: white;
+  font-size: 14px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 120px;
+  background-color: #00069a;
+}
+.main-profile .skill-section .percentage-bar .title span {
+  background: rgba(0, 0, 0, 0.1);
+  display: block;
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  text-align: center;
+}
+.main-profile .skill-section .percentage-bar .bar {
+  height: 35px;
+  width: 0px;
+  background-color: #189ab4;
+}
+.main-profile .skill-section .percentage-bar .percent {
+  color: rgb(122, 121, 121);
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.main-profile .work-section h2 {
+  color: #00069a;
+}
+.main-profile .work-section span {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.main-profile .work-section .work-wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+.main-profile .work-section .work-wrapper .work-bg img {
+  width: 100%;
+}
+.main-profile .work-section .work-wrapper .work-bg .button {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main-profile .work-section .work-wrapper .work-bg .button .text {
+  background-color: white;
+  color: #00069a;
+  border-radius: 18px;
+  font-size: 16px;
+  padding: 8px 32px;
+}
+.main-profile .work-section .work-wrapper .work-bg:hover img {
+  filter: brightness(0.5);
+  box-shadow: 0px 0px 0px #00069a;
+}
+.main-profile .work-section .work-wrapper .work-bg:hover .button {
+  opacity: 1;
+}
+.main-profile .work-section .contact-btn button {
+  border-radius: 6px;
+  border: 3px solid #00069a;
+  font-size: 1.6rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #00069a, #00069a 50%, #007bff 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  transition: all 0.3s ease-in-out;
+}
+.main-profile .work-section .contact-btn button::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 3px;
+  bottom: 5px;
+  left: 0;
+  bottom: -3px;
+  z-index: 0;
+  position: absolute;
+  background: #00069a;
+  transition: all 0.3s ease-in-out;
+}
+.main-profile .work-section .contact-btn button:hover {
+  background-position: 0%;
+}
+.main-profile .contact-section {
+  background-color: #2d2c2c;
+  padding: 100px;
+  height: 57vh;
+}
+@media (min-width: 576px) {
+  .main-profile .contact-section {
+    height: unset;
+  }
+}
+.main-profile .contact-section p {
+  font-size: 2.4rem;
+  font-family: inherit;
+  font-weight: 500;
+  color: white;
+  line-height: 1.2;
+}
+.main-profile .contact-section label {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.main-profile .contact-section a {
+  color: white;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.main-profile .contact-section a:hover {
+  background-color: #189ab4;
+}
+.main-profile .footer-section {
+  background-color: #1e1b1b;
+}
+.main-profile .footer-section .social-btn a {
+  padding: 15px 28px;
+  border: 1px solid #2d2c2c;
+  background-color: #2d2c2c;
+}
+.main-profile .footer-section .social-btn a i {
+  font-size: 1.5rem;
+  color: white;
+}
+.main-profile .footer-section .social-btn a:hover {
+  background-color: #189ab4;
+}
+
+.hidden {
+  display: none;
+  left: -50px;
+}
+
+.reveal {
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}/*# sourceMappingURL=style.css.map */
